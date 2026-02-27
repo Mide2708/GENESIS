@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Genesis Put</title>
+  <meta name="description" content="Contact Genesis Put for consultations, project support, and professional delivery services." />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container row">
+    <span>📍 Nigeria • Nationwide Delivery</span>
+    <a href="mailto:hello@genesisput.com">hello@genesisput.com</a>
+  </div>
+</div>
+
+<header class="header">
+  <div class="container row">
+    <a class="brand" href="index.html">
+      <span class="logo">GP</span>
+      <span class="brandText">
+        <strong>Genesis Put</strong>
+        <small>Building Excellence. Delivering Impact.</small>
+      </span>
+    </a>
+
+    <nav class="nav">
+      <button class="navToggle" aria-expanded="false">Menu</button>
+      <ul>
+        <li><a data-page="index.html" href="index.html">Home</a></li>
+        <li><a data-page="about.html" href="about.html">About</a></li>
+        <li><a data-page="services.html" href="services.html">Services</a></li>
+        <li><a data-page="portfolio.html" href="portfolio.html">Portfolio</a></li>
+        <li><a data-page="gallery.html" href="gallery.html">Gallery</a></li>
+        <li><a data-page="contact.html" href="contact.html" class="btn sm cta">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <div class="sectionHead">
+      <div>
+        <div class="kicker">Contact</div>
+        <h2 class="h2">Let’s talk about your project</h2>
+        <p class="p">Send your project type, city, timeline, and any budget range (optional).</p>
+      </div>
+    </div>
+
+    <div class="formWrap">
+      <form onsubmit="return handleSubmit(event)">
+        <div class="row2">
+          <label>Full Name
+            <input name="name" required placeholder="Your name" />
+          </label>
+          <label>Phone
+            <input name="phone" required placeholder="+234 ..." />
+          </label>
+        </div>
+
+        <div class="row2">
+          <label>Email
+            <input name="email" type="email" placeholder="you@email.com" />
+          </label>
+          <label>Service Needed
+            <select name="service" required>
+              <option value="">Select one</option>
+              <option>Project Management</option>
+              <option>Procurement & Logistics</option>
+              <option>Operations Support</option>
+              <option>Contractor Coordination</option>
+              <option>Business Documentation</option>
+              <option>Client Communication</option>
+            </select>
+          </label>
+        </div>
+
+        <label>City / Location
+          <input name="city" required placeholder="e.g., Lagos" />
+        </label>
+
+        <label>Message
+          <textarea name="message" rows="6" required placeholder="Tell us about the scope, timeline, and any requirements..."></textarea>
+        </label>
+
+        <div class="ctaRow">
+          <button class="btn" type="submit">Send Message</button>
+          <p class="note" id="formNote" aria-live="polite"></p>
+        </div>
+        <p class="small">Demo only: connect to Formspree / Netlify Forms / backend to receive messages.</p>
+      </form>
+
+      <aside class="panel">
+        <h3>Contact Details</h3>
+        <p class="p"><strong>Email:</strong> <a href="mailto:hello@genesisput.com">hello@genesisput.com</a></p>
+        <p class="p"><strong>Coverage:</strong> Nationwide (Nigeria)</p>
+        <p class="p"><strong>Hours:</strong> Mon–Sat • 9am–6pm</p>
+
+        <div style="height:12px"></div>
+        <h3>Quick Start</h3>
+        <p class="p">Include:</p>
+        <ul class="small">
+          <li>Service type</li>
+          <li>City & site details</li>
+          <li>Timeline</li>
+          <li>Attachments / requirements</li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container bottom small">
+    <span>© <span id="year"></span> Genesis Put. All rights reserved.</span>
+    <a href="index.html">Home</a>
+  </div>
+</footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
